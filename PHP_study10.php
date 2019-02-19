@@ -14,6 +14,7 @@
         </ol>
         <h2>
             <?php
+            //isset 값이 있으면 트루 없으면 폴스 
             if(isset($_GET['id'])){
                 echo $_GET['id'];
             } else{

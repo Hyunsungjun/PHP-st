@@ -30,6 +30,16 @@
         echo "<br>";
         var_dump(1>=1);
         echo "<br>";
+// 1
+// int(1) 
+// string(1) "1" 
+// int(2) 
+// 비교연산자 1==1
+// bool(true) 
+// 비교연산자 1>1
+// bool(false) 
+// 비교연산자 1>=1
+// bool(true) 
         ?>
         
     </body>

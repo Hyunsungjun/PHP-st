@@ -39,7 +39,9 @@ function print_list(){
     while($i<count($list)){
         if($list[$i] != '.' ){
             if($list[$i] != '..'){
-                echo "<li><a href=\"PHP_study14.php?et=$list[$i]\">$list[$i]</a></li>\n";//배열 숫자를 세는 함수를 이용하여 동적인 표현을 할수가 있게된다.
+                if($list[$i] != '.DS_Store'){//DS_Store는 내가 쓴적없는데.. 
+                    echo "<li><a href=\"PHP_study16.php?id=$list[$i]\">$list[$i]</a></li>\n";//배열 숫자를 세는 함수를 이용하여 동적인 표현을 할수가 있게된다.
+                }
             }
         }
         $i = $i +1;
@@ -55,19 +57,23 @@ function print_list(){
         ?></title>
     </head>
     <body>
-        <h1><a href="PHP_study14.php">WEB</a></h1>
+        <h1><a href="PHP_study16.php">WEB</a></h1>
         <ol>
             <?php
             print_list();
             ?>
         </ol>
-        <h2>
-        <?php
-        print_title();
-        ?>
-        </h2>
-        <?php
-        print_description();
-        ?>
+        <a href="PHP_study16create.php">create</a>
+        <form action="PHP_study16create_process.php" method="post">
+            <p>
+                <input type="text" name="title" placeholder="Title">
+            </p>
+            <p>
+                <textarea name="description" placeholder="Descriptrion"></textarea>
+            </p>
+            <p>
+                <input type="submit">
+            </p>
+        </form>
     </body>
 </html>
