@@ -67,6 +67,11 @@ function print_list(){
         <?php if(isset($_GET['id'])) { ?>
         <!-- <a href="PHP_study16update.php?id=<?php //echo $_GET['id']; ?>">update</a> --> <!-- 아래와 같다-->
         <a href="PHP_study16update.php?id=<?=$_GET['id'] ?>">update</a>
+        <!-- <a href="PHP_study16delete_process.php?id=<?=$_GET['id'] ?>">delete</a> -->
+        <form action="PHP_study16delete_process.php" method="post">
+        <input type="hidden" name="id" value="<?=$_GET['id']?>">
+        <input type="submit" value="delete">
+        </form>
         <?php } ?>
         <h2>
         <?php
