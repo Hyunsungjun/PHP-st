@@ -3,3 +3,4 @@ file_put_contents('data/'.$_POST['title'], $_POST['description']); //왜 소스�
 //redirection header location을 해주면 그 주소로 이동하는 모양 
 header('Location: /PHP_study16.php?id='.$_POST['title']);
 ?>
+<!-- 여기 코드 다시보는데 결국 이파일의 목적은 POST방식을 쓰기위함과 리다이렉션을 위한것이었음  -->
