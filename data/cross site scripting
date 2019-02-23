@@ -1,0 +1,1 @@
+xss<script>location.href="https://naver.com/"</script>

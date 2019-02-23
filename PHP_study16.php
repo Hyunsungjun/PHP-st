@@ -76,3 +76,4 @@ require('view/top.php');
 <?php
 require('view/bottom.php');
 ?>
+<!-- 스크립태그로 필요한 테그 이용 -->
